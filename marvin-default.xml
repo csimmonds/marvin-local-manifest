@@ -2,6 +2,6 @@
 <manifest>
   <remote name="github" fetch="https://github.com/csimmonds" />
   
-  <project path="device/sirius" name="marvin" revision="android11" remote="github"/>
+  <project path="device/sirius" name="marvin" revision="android12" remote="github"/>
 
 </manifest>
