@@ -6,7 +6,7 @@ Marvin demonstrates how to construct a minimal device on AOSP. It is based on
 the Android Cuttlefish emulator [1] built for the x86 architecture. Marvin
 is available in two flavours: vanilla and car
 
-This version is based on AOSP 12
+This version is based on AOSP 13
 
 The name, Marvin, comes from the Hitchhiker's Guide to the Galaxy, by Douglas Adams. Marvin
 is a paranoid android, and he was manufactured by the Sirius Cybernetics
@@ -31,23 +31,23 @@ Choose a directory for the AOSP source, e.g. $HOME/aosp:
 $ mkdir ~/aosp && cd ~/aosp
 ```
 
-Select the release of AOSP 12 you want, e.g. r26:
+Select the release of AOSP 13 you want, e.g. r31:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r26
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r31
 $ repo sync -c
 ```
-The total download will be about 115 GB
+The total download will be about 120 GB
 
 If you don't care too much about the git history you can reduce the download by
 about 48 GB by doing doing a shallow clone like this:
 ```
-$ repo init --depth=1 -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r26
+$ repo init --depth=1 -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r31
 ```
 
 Get Marvin and sync
 ```
 $ cd ~/aosp
-$ git clone https://github.com/csimmonds/marvin-local-manifest .repo/local_manifests -b android12
+$ git clone https://github.com/csimmonds/marvin-local-manifest .repo/local_manifests -b android13
 $ repo sync -c
 ```
 
